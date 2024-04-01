@@ -31,7 +31,7 @@ const Home = () => {
       </p> 
       <h3>Join us today</h3>
       <p>
-        Join us at UVS, where excellence meets expertise, and let us redefine what it means to elevate your gaming experience.
+        Join us at our <a href="https://discord.com/invite/uvswtf" target="_blank" rel="noopener noreferrer">UVS Discord</a>, where excellence meets expertise, and let us redefine what it means to elevate your gaming experience.
       </p>
     </PageWrapper>
   );

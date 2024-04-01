@@ -67,7 +67,12 @@ const Nav = () => {
   return (
     <>
       <MobileHeader>
-        <Title>Universal Shop</Title>
+        <Title>Universal Store</Title>
+        {openOnMobile ? (
+          <Icons onClick={toggleMobileMenu} />
+        ) : (
+          <Icons onClick={toggleMobileMenu} />
+        )}
       </MobileHeader>
       <Container openOnMobile={openOnMobile}>
         {!openOnMobile ? (
@@ -82,12 +87,13 @@ const Nav = () => {
         <Items>
           {!openOnMobile ? (
             <Row>
-              <Title>Universal Shop</Title>
+              <Title>Universal Store</Title>
               {/* <IconButton>
               <ChevronDown />
             </IconButton> */}
             </Row>
           ) : null}
+
 
           <div ref={dragConstraintsRef}>
             <Page active={pathname === '/' ? 1 : 0} to="/">
